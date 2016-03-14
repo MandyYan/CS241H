@@ -1,0 +1,5 @@
+WEEK 1:basic client code
+WEEK 2:basic server code
+WEEK 3:do multithreading and context switch
+WEEK 4-5:implement multicast, inlcuding causal ordering, FIFO ording, and total ordering
+WEEK 6-7:show the deley between timestamp 
