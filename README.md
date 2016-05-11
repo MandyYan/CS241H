@@ -14,10 +14,10 @@ This is a project for UIUC CS241 honor, and I build a **kernel module** to simul
   -  Ensure you have the **root permission** of the virtual machine.
   -  Download all the files of 241H from my repository.
   -  Compile all the files and get **userapp, edf_final.ko, edf_final.mod.c, edf_final.mod.o, edf_final.o, edf.o, modules.order, and Module.symvers**.
-  -  ```sh
+  
+  - ```sh
      $ Make
      ```
-
   - **Load** the edf module created to kernel
   
   - ```sh
