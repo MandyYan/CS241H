@@ -48,6 +48,7 @@ This is a project for UIUC CS241 honor, and I build a **kernel module** to simul
 - In edf.c, I have handle_register() to transmit the jobs data structure, handle_yield() to update the deadline and do the preemption or call dispatching thread, and handle_deregister() to remove a a job. Upon reads, I pass the pids of all registered tasks through on_open of the proc filesystem with a **sequence file**, to the user-space process. The **dispatching thread** is a thread running in the background which select the highest priority task in the list and does the **preemption** decision and action. I use **Linux scheuler API** to do the preemtion. **spin_lock_irqsave() and spin_lock_irqrestore()** are used in timer wakeup handler to avoid deadlocking.
 
 
-### External Library
+#### External Library
+
 <linux/module.h> <linux/kernel.h> <linux/list.h> <linux/proc_fs.h> <linux/seq_file.h> <linux/string.h> <linux/timer.h> <linux/workqueue.h> <asm/uaccess.h> <linux/kthread.h> <linux/spinlock.h> <linxu/slab.h> <stdio.h> <stdlib.h> <sys/time.h> <errno.h> <string.h> <unistd.h>
 
