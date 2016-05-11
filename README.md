@@ -9,7 +9,8 @@ This is a project for UIUC CS241 honor, and I build a **kernel module** to simul
   - pri_queue.c:  Try to use a priority queue to optimize the efficiency of scheduling jobs.
 
 #### Setting Up The Environment, Compilation and Usage
-  -  Since the project is building a kernel module, it's important to use a ** Linux virtual machine** so that the my own system will not crash if I encounter any errors.
+  
+  -  Since the project is building a kernel module, it's important to use a **Linux virtual machine** so that the my own system will not crash if I encounter any errors.
   -  Ensure you have the **root permission** of the virtual machine.
   -  Download all the files of 241H from my repository.
   -  Compile all the files and get **userapp, edf_final.ko, edf_final.mod.c, edf_final.mod.o, edf_final.o, edf.o, modules.order, and Module.symvers**.
@@ -53,3 +54,6 @@ This is a project for UIUC CS241 honor, and I build a **kernel module** to simul
 
 linux/module.h , linux/kernel.h , linux/list.h , linux/proc_fs.h , linux/seq_file.h,  linux/string.h,  linux/timer.h,  linux/workqueue.h,  asm/uaccess.h, linux/kthread.h, linux/spinlock.h, linxu/slab.h, stdio.h, stdlib.h, sys/time.h, errno.h, string.h, unistd.h
 
+#### Screenshot of running three process simultaneously
+You can see the preemption and delay in the three processes
+![alt tag](https://github.com/MandyYan/CS241H/blob/master/screenshot.png)
