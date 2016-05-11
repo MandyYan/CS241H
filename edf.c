@@ -14,7 +14,7 @@
 #include <linux/spinlock.h>
 
 #include "edf_task_list.h"
-#include "edf_given.h"
+#include "edf_find.h"
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("16");
