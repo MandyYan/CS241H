@@ -17,19 +17,26 @@ This is a project for UIUC CS241 honor, and I build a **kernel module** to simul
   -  ```sh
      $ Make
      ```
+
   - **Load** the edf module created to kernel
+  
   - ```sh
      $ sudo insmod edf_final.ko
      ```
   - **Check** whether the edf module is loaded
+ 
   - ```sh
      $ lsmod
      ```
+  
   - If the module is not loaded, **reboot** the virtual machine
+ 
   - ```sh
      $ shutdown -r 0
      ```
-  - If the module is loaded, run multiple cases of the **userapp** to see jobs interleaving and preemption: for example, userapp 400 40 100 10000, userapp 1000 40 30 100000
+  
+ - If the module is loaded, run multiple cases of the **userapp** to see jobs interleaving and preemption: for example, userapp 400 40 100 10000, userapp 1000 40 30 100000
+ 
   - ```sh
      $ userapp [period(ms)] [computation_time(ms)] [number of iterations] [length of each job]
     ```
